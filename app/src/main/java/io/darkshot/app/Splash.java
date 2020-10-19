@@ -1,0 +1,25 @@
+package io.darkshot.app;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.animation.AnticipateInterpolator;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Splash extends AppCompatActivity {
+	
+	ImageView sp_logo;
+	
+	@Override
+	protected void onCreate ( Bundle savedInstanceState ) {
+		super.onCreate ( savedInstanceState );
+		setContentView ( R.layout.activity_main );
+		
+		//ID DECLARATION
+		sp_logo = findViewById ( R.id.splogo );
+		sp_logo.animate ( ).scaleX ( 1.2f ).scaleY ( 1.2f ).setInterpolator ( new AnticipateInterpolator ( ) ).setDuration ( 1300 );
+		new Handler ( ).postDelayed ( ( ) -> startActivity ( new Intent ( Splash.this , Splash.class ) ) , 5000 );
+	}
+}

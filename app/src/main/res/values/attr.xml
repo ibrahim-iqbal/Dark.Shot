@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="theme">
+        <attr name="backgroundcolor" format="color" />
+        <attr name="textcolor" format="color" />
+        <attr name="cardcolor" format="color" />
+        <attr name="tintcolor" format="color" />
+        <attr name="hintcolor" format="color" />
+        <attr name="buttoncolor" format="color" />
+        <attr name="buttontextcolor" format="color" />
+        <attr name="headingcolor" format="color" />
+        <attr name="huecolor" format="color" />
+        <attr name="presscolor" format="color" />
+    </declare-styleable>
+</resources>
