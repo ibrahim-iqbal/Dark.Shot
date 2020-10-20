@@ -20,6 +20,6 @@ public class Splash extends AppCompatActivity {
 		//ID DECLARATION
 		sp_logo = findViewById ( R.id.splogo );
 		sp_logo.animate ( ).scaleX ( 1.2f ).scaleY ( 1.2f ).setInterpolator ( new AnticipateInterpolator ( ) ).setDuration ( 1300 );
-		new Handler ( ).postDelayed ( ( ) -> startActivity ( new Intent ( Splash.this , Splash.class ) ) , 5000 );
+		new Handler ( ).postDelayed ( ( ) -> startActivity ( new Intent ( Splash.this , DashboardActivity.class ) ) , 5000 );
 	}
 }
