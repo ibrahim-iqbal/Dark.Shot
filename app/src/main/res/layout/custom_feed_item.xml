@@ -1,47 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="300dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginBottom="8dp"
-    android:background="@drawable/card_view"
-    android:elevation="3dp">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	android:layout_width = "match_parent"
+	android:layout_height = "300dp"
+	android:layout_marginLeft = "16dp"
+	android:layout_marginTop = "8dp"
+	android:layout_marginRight = "16dp"
+	android:layout_marginBottom = "8dp"
+	android:background = "@drawable/card_view"
+	android:elevation = "3dp" >
+	
+	<LinearLayout
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:orientation = "vertical"
+		android:weightSum = "1" >
+		
+		<com.google.android.material.card.MaterialCardView
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:layout_margin = "0dp"
+			android:layout_weight = "0.8"
+			android:padding = "0dp"
+			app:cardCornerRadius = "8dp"
+			app:cardElevation = "1dp"
+			app:cardUseCompatPadding = "false" >
+			
+			<ImageView
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:scaleType = "centerCrop"
+				android:src = "@drawable/index" />
+		
+		</com.google.android.material.card.MaterialCardView >
+		
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:layout_weight = "0.2"
+			android:orientation = "horizontal"
+			android:padding = "8dp"
+			android:weightSum = "1" >
+			
+			<LinearLayout
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_marginEnd = "4dp"
+				android:orientation="vertical"
+				android:weightSum="1"
+				android:layout_weight = "0.7" >
+				
+				<TextView
+					android:layout_width = "match_parent"
+					android:layout_height = "0dp"
+					android:ellipsize="end"
+					android:lines="1"
+					style="@style/usernameText"
+					android:text="username@123"
+					android:layout_weight="0.5"/>
+				
+				<TextView
+					android:layout_width = "match_parent"
+					android:layout_height = "0dp"
+					android:ellipsize="end"
+					style="@style/caption"
+					android:lines="1"
+					android:text="Caption Lorem Ipsum"
+					android:layout_weight="0.5"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_marginStart = "4dp"
+				android:layout_weight = "0.3"
+				android:orientation = "horizontal"
+				android:weightSum = "3" >
+				
+				<ImageButton
+					style="@style/Widget.MaterialComponents.Button.TextButton"
+					android:background="?selectableItemBackground"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_weight = "1"
+					android:src = "@drawable/comment" />
+				
+				<ImageButton
+					style="@style/Widget.MaterialComponents.Button.TextButton"
+					android:background="?selectableItemBackground"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_weight = "1"
+					android:src = "@drawable/unlike" />
+				
+				<ImageButton
+					style="@style/Widget.MaterialComponents.Button.TextButton"
+					android:background="?selectableItemBackground"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_weight = "1"
+					android:src = "@drawable/share" />
+			
+			</LinearLayout >
+		</LinearLayout >
+	
+	</LinearLayout >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="1">
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="0dp"
-            android:layout_weight="0.8"
-            android:padding="0dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="1dp"
-            app:cardUseCompatPadding="false">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/index" />
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:padding="8dp">
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout >
