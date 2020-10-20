@@ -5,7 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/backgroundcolor"
-    tools:context=".DashboardActivity">
+    tools:context=".view.DashboardActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        tools:listitem="@layout/custom_feed_item" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
@@ -24,9 +30,10 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:backgroundTint="?attr/cardcolor"
+        app:backgroundTint="?attr/backgroundcolor"
         app:layout_anchor="@id/bottomAppBar"
         app:srcCompat="@drawable/ic_add_24dp"
-        app:tint="?attr/tintcolor" />
+        app:tint="?attr/tintcolor"
+        tools:ignore="ContentDescription" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

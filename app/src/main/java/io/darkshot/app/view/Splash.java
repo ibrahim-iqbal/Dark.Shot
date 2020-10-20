@@ -1,4 +1,4 @@
-package io.darkshot.app;
+package io.darkshot.app.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.animation.AnticipateInterpolator;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import io.darkshot.app.R;
 
 public class Splash extends AppCompatActivity {
 	

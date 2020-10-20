@@ -9,8 +9,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.DarkShot.Dark">
-        <activity android:name=".DashboardActivity"></activity>
-        <activity android:name=".Splash">
+        <activity android:name=".view.DashboardActivity" />
+        <activity android:name=".view.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
