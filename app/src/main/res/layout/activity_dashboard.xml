@@ -8,9 +8,11 @@
     tools:context=".view.DashboardActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/feed"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/custom_feed_item" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -20,12 +22,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         app:backgroundTint="?attr/cardcolor"
-        app:fabAlignmentMode="center"
+        app:buttonGravity="center_vertical"
         app:fabAnimationMode="slide"
         app:fabCradleMargin="8dp"
         app:fabCradleRoundedCornerRadius="8dp"
+        app:fabAlignmentMode="end"
+        app:hideOnScroll="true"
+        app:layout_dodgeInsetEdges="all"
         app:menu="@menu/bottom_app_bar"
-        app:navigationIcon="@drawable/ic_menu_24dp" />
+        app:popupTheme="@style/popupTheme"
+        app:srcCompat="@drawable/ic_menu_24dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
