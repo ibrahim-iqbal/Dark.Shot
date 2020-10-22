@@ -7,17 +7,18 @@
 		<item name = "colorPrimaryDark" >@color/colorPrimaryDark</item >
 		<item name = "colorPrimaryVariant" >@color/colorPrimaryLight</item >
 		<item name = "colorOnPrimary" >@color/colorOnPrimary</item >
-		<!-- Customize your theme here. -->
-		<item name = "backgroundcolor" >@color/colorPrimary</item >
-		<item name = "textcolor" >@color/colorOnPrimary</item >
-		<item name = "cardcolor" >@color/colorPrimaryLight</item >
-		<item name = "tintcolor" >@color/colorOnPrimary</item >
-		<item name = "hintcolor" >@color/colorPrimaryDark</item >
-		<item name = "buttoncolor" >@color/colorOnPrimary</item >
-		<item name = "buttontextcolor" >@color/colorPrimary</item >
-		<item name = "headingcolor" >@color/colorOnPrimary</item >
-		<item name = "huecolor" >@color/colorPrimaryLight</item >
-	</style >
+        <!-- Customize your theme here. -->
+        <item name="backgroundcolor">@color/colorPrimary</item>
+        <item name="textcolor">@color/colorOnPrimary</item>
+        <item name="cardcolor">@color/colorPrimaryLight</item>
+        <item name="tintcolor">@color/colorOnPrimary</item>
+        <item name="hintcolor">@color/colorPrimaryDark</item>
+        <item name="buttoncolor">@color/colorOnPrimary</item>
+        <item name="buttontextcolor">@color/colorPrimary</item>
+        <item name="headingcolor">@color/colorOnPrimary</item>
+        <item name="huecolor">@color/colorPrimaryLight</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimation</item>
+    </style>
 	
 	<style name = "Theme.DarkShot.Dark" parent = "Theme.MaterialComponents.DayNight.NoActionBar" >
 		<!-- Primary brand color. -->
@@ -25,16 +26,17 @@
 		<item name = "colorPrimaryDark" >@color/colorSecondaryDark</item >
 		<item name = "colorPrimaryVariant" >@color/colorSecondaryLight</item >
 		<item name = "colorOnPrimary" >@color/colorOnSecondary</item >
-		<!-- Customize your theme here. -->
-		<item name = "backgroundcolor" >@color/colorSecondary</item >
-		<item name = "textcolor" >@color/colorOnSecondary</item >
-		<item name = "cardcolor" >@color/colorSecondaryDark</item >
-		<item name = "tintcolor" >@color/colorOnSecondary</item >
-		<item name = "hintcolor" >@color/colorSecondaryDark</item >
-		<item name = "buttoncolor" >@color/colorOnSecondary</item >
-		<item name = "buttontextcolor" >@color/colorSecondary</item >
-		<item name = "headingcolor" >@color/colorOnSecondary</item >
-		<item name = "huecolor" >@color/colorSecondaryLight</item >
-	</style >
+        <!-- Customize your theme here. -->
+        <item name="backgroundcolor">@color/colorSecondary</item>
+        <item name="textcolor">@color/colorOnSecondary</item>
+        <item name="cardcolor">@color/colorSecondaryDark</item>
+        <item name="tintcolor">@color/colorOnSecondary</item>
+        <item name="hintcolor">@color/colorSecondaryDark</item>
+        <item name="buttoncolor">@color/colorOnSecondary</item>
+        <item name="buttontextcolor">@color/colorSecondary</item>
+        <item name="headingcolor">@color/colorOnSecondary</item>
+        <item name="huecolor">@color/colorSecondaryLight</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimation</item>
+    </style>
 
 </resources >

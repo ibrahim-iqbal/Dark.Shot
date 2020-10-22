@@ -3,7 +3,8 @@
 
     <style name="headingText" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textColor">?attr/textcolor</item>
-        <item name="android:textStyle">italic</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24dp</item>
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="fontFamily">@font/montserrat_bold</item>
     </style>
@@ -37,6 +38,12 @@
         <item name="cornerSizeTopLeft">16dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+
+    <style name="WindowAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
 </resources>

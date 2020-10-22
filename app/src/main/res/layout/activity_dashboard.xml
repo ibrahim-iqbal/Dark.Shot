@@ -34,9 +34,10 @@
         app:srcCompat="@drawable/ic_menu_24dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:backgroundTint="?attr/backgroundcolor"
+        app:backgroundTint="?attr/cardcolor"
         app:layout_anchor="@id/bottomAppBar"
         app:srcCompat="@drawable/ic_add_24dp"
         app:tint="?attr/tintcolor"
