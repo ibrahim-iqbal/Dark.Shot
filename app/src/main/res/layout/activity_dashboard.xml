@@ -25,13 +25,11 @@
         app:buttonGravity="center_vertical"
         app:fabAnimationMode="slide"
         app:fabCradleMargin="8dp"
-        app:fabCradleRoundedCornerRadius="8dp"
-        app:fabAlignmentMode="end"
+        android:theme="@style/popupMenu"
+        app:fabAlignmentMode="center"
         app:hideOnScroll="true"
-        app:layout_dodgeInsetEdges="all"
         app:menu="@menu/bottom_app_bar"
-        app:popupTheme="@style/popupTheme"
-        app:srcCompat="@drawable/ic_menu_24dp" />
+        app:fabCradleRoundedCornerRadius="16dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabDash"

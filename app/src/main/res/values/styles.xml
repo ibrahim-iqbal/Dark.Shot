@@ -22,8 +22,8 @@
         <item name="fontFamily">@font/montserrat</item>
     </style>
 
-    <style name="popupTheme" parent="@style/ThemeOverlay.MaterialComponents">
-        <item name="android:colorBackground">?attr/cardcolor</item>
+    <style name="popupMenu" parent="Base.Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/card_view</item>
         <item name="android:textColor">?attr/textcolor</item>
         <item name="android:textColorPrimary">?attr/textcolor</item>
     </style>
@@ -39,7 +39,6 @@
         <item name="cornerSizeBottomRight">0dp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
     </style>
-
 
     <style name="WindowAnimation">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
