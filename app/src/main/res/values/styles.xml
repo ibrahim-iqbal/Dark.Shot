@@ -1,49 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources >
+	
+	<style name = "headingText" parent = "TextAppearance.MaterialComponents.Headline4" >
+		<item name = "android:textColor" >?attr/textcolor</item >
+		<item name = "android:textStyle" >bold</item >
+		<item name = "android:textSize" >24dp</item >
+		<item name = "android:fontFamily" >@font/montserrat_bold</item >
+		<item name = "fontFamily" >@font/montserrat_bold</item >
+	</style >
+	
+	<style name = "usernameText" parent = "TextAppearance.MaterialComponents.Subtitle2" >
+		<item name = "android:textColor" >?attr/textcolor</item >
+		<item name = "android:textAllCaps" >true</item >
+		<item name = "android:fontFamily" >@font/montserrat_bold</item >
+		<item name = "fontFamily" >@font/montserrat_bold</item >
+	</style >
+	
+	<style name = "caption" parent = "TextAppearance.MaterialComponents.Subtitle2" >
+		<item name = "android:textColor" >?attr/textcolor</item >
+		<item name = "android:fontFamily" >@font/montserrat</item >
+		<item name = "fontFamily" >@font/montserrat</item >
+	</style >
+	
+	<style name = "popupTheme" parent = "@style/ThemeOverlay.MaterialComponents" >
+		<item name = "android:colorBackground" >?attr/cardcolor</item >
+		<item name = "android:textColor" >?attr/textcolor</item >
+		<item name = "android:textColorPrimary" >?attr/textcolor</item >
+	</style >
+	
+	<style name = "CustomCardViewStyle" parent = "@style/Widget.MaterialComponents.CardView" >
+		<item name = "shapeAppearanceOverlay" >@style/caption</item >
+	</style >
+	
+	<style name = "customCard" parent = "ShapeAppearance.MaterialComponents.MediumComponent" >
+		<item name = "cornerFamily" >rounded</item >
+		<item name = "cornerSizeTopRight" >16dp</item >
+		<item name = "cornerSizeTopLeft" >16dp</item >
+		<item name = "cornerSizeBottomRight" >0dp</item >
+		<item name = "cornerSizeBottomLeft" >0dp</item >
+	</style >
+	
+	<style name = "inputField" parent = "Widget.MaterialComponents.TextInputLayout.FilledBox" >
+		<item name = "background" >@drawable/card_view</item >
+		<item name = "errorEnabled" >true</item >
+		<item name = "hintEnabled" >true</item >
+		<item name = "hintcolor" >?attr/hintcolor</item >
+		<item name = "fontFamily" >@font/montserrat</item >
+		<item name = "android:fontFamily" >@font/montserrat</item >
+		<item name = "strokeColor" >?attr/hintcolor</item >
+		<item name = "boxStrokeWidth" >0dp</item >
+		<item name = "boxStrokeWidthFocused" >2dp</item >
+	
+	</style >
+	
+	<style name = "WindowAnimation" >
+		<item name = "android:windowEnterAnimation" >@android:anim/fade_in</item >
+		<item name = "android:windowExitAnimation" >@android:anim/fade_out</item >
+	</style >
 
-    <style name="headingText" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="android:textColor">?attr/textcolor</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">24dp</item>
-        <item name="android:fontFamily">@font/montserrat_bold</item>
-        <item name="fontFamily">@font/montserrat_bold</item>
-    </style>
-
-    <style name="usernameText" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="android:textColor">?attr/textcolor</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:fontFamily">@font/montserrat_bold</item>
-        <item name="fontFamily">@font/montserrat_bold</item>
-    </style>
-
-    <style name="caption" parent="TextAppearance.MaterialComponents.Subtitle2">
-        <item name="android:textColor">?attr/textcolor</item>
-        <item name="android:fontFamily">@font/montserrat</item>
-        <item name="fontFamily">@font/montserrat</item>
-    </style>
-
-    <style name="popupTheme" parent="@style/ThemeOverlay.MaterialComponents">
-        <item name="android:colorBackground">?attr/cardcolor</item>
-        <item name="android:textColor">?attr/textcolor</item>
-        <item name="android:textColorPrimary">?attr/textcolor</item>
-    </style>
-
-    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
-        <item name="shapeAppearanceOverlay">@style/caption</item>
-    </style>
-
-    <style name="customCard" parent="ShapeAppearance.MaterialComponents.MediumComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSizeTopRight">16dp</item>
-        <item name="cornerSizeTopLeft">16dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-    </style>
-
-
-    <style name="WindowAnimation">
-        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
-        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
-    </style>
-
-</resources>
+</resources >
