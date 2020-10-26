@@ -1,147 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MotionScene
-	xmlns:android = "http://schemas.android.com/apk/res/android"
-	xmlns:motion = "http://schemas.android.com/apk/res-auto" >
-	
-	<Transition
-		motion:constraintSetEnd = "@+id/end"
-		motion:constraintSetStart = "@id/start"
-		motion:duration = "4000"
-		motion:motionInterpolator = "linear" >
-		<KeyFrameSet >
-			
-			<KeyAttribute
-				android:translationY = "-30dp"
-				motion:framePosition = "10"
-				android:rotation="10"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-60dp"
-				motion:framePosition = "20"
-				android:rotation="20"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-90dp"
-				motion:framePosition = "30"
-				android:rotation="30"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-120dp"
-				motion:framePosition = "40"
-				android:rotation="40"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-150dp"
-				motion:framePosition = "50"
-				android:rotation="50"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-180dp"
-				motion:framePosition = "60"
-				android:rotation="60"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-210dp"
-				motion:framePosition = "70"
-				android:rotation="70"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-240dp"
-				motion:framePosition = "80"
-				android:rotation="80"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-270dp"
-				motion:framePosition = "90"
-				android:rotation="80"
-				motion:motionTarget = "@+id/splogo" />
-			<KeyAttribute
-				android:translationY = "-300dp"
-				motion:framePosition = "100"
-				android:rotation="100"
-				motion:motionTarget = "@+id/splogo" />
-			
-			<!-- TEXT VIEW -->
-			
-			<KeyAttribute
-				android:translationY = "-30dp"
-				motion:framePosition = "10"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-60dp"
-				motion:framePosition = "20"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-90dp"
-				motion:framePosition = "30"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-120dp"
-				motion:framePosition = "40"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-150dp"
-				motion:framePosition = "50"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-180dp"
-				motion:framePosition = "60"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-210dp"
-				motion:framePosition = "70"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-240dp"
-				motion:framePosition = "80"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-270dp"
-				motion:framePosition = "90"
-				motion:motionTarget = "@+id/materialTextView" />
-			<KeyAttribute
-				android:translationY = "-300dp"
-				motion:framePosition = "100"
-				motion:motionTarget = "@+id/materialTextView" />
-		
-		</KeyFrameSet >
-	</Transition >
-	
-	<ConstraintSet android:id = "@+id/start" >
-		<Constraint
-			android:id = "@+id/splogo"
-			android:layout_width = "56dp"
-			android:layout_height = "56dp"
-			android:layout_marginStart = "16dp"
-			android:layout_marginBottom = "8dp"
-			motion:layout_constraintBottom_toTopOf = "@+id/materialTextView"
-			motion:layout_constraintStart_toStartOf = "parent" />
-		<Constraint
-			android:id = "@+id/materialTextView"
-			android:layout_width = "wrap_content"
-			android:layout_height = "wrap_content"
-			android:layout_marginStart = "16dp"
-			android:layout_marginBottom = "8dp"
-			motion:layout_constraintBottom_toBottomOf = "parent"
-			motion:layout_constraintStart_toStartOf = "parent" />
-	</ConstraintSet >
-	
-	<ConstraintSet android:id = "@+id/end" >
-		<Constraint
-			android:id = "@+id/splogo"
-			android:layout_width = "36dp"
-			android:layout_height = "36dp"
-			android:layout_marginStart = "16dp"
-			android:layout_marginBottom = "8dp"
-			motion:layout_constraintBottom_toTopOf = "@+id/materialTextView"
-			motion:layout_constraintStart_toStartOf = "parent" />
-		<Constraint
-			android:id = "@+id/materialTextView"
-			android:layout_width = "wrap_content"
-			android:layout_height = "wrap_content"
-			android:layout_marginStart = "16dp"
-			android:layout_marginBottom = "8dp"
-			motion:layout_constraintBottom_toBottomOf = "parent"
-			motion:layout_constraintStart_toStartOf = "parent" />
-	</ConstraintSet >
-</MotionScene >
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="4000"
+        motion:motionInterpolator="linear">
+        <KeyFrameSet>
+
+            <KeyAttribute
+                android:rotation="10"
+                android:translationY="-30dp"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="20"
+                android:translationY="-60dp"
+                motion:framePosition="20"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="30"
+                android:translationY="-90dp"
+                motion:framePosition="30"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="40"
+                android:translationY="-120dp"
+                motion:framePosition="40"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="50"
+                android:translationY="-150dp"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="60"
+                android:translationY="-180dp"
+                motion:framePosition="60"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="70"
+                android:translationY="-210dp"
+                motion:framePosition="70"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="80"
+                android:translationY="-240dp"
+                motion:framePosition="80"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="80"
+                android:translationY="-270dp"
+                motion:framePosition="90"
+                motion:motionTarget="@+id/splogo" />
+            <KeyAttribute
+                android:rotation="100"
+                android:translationY="-300dp"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/splogo" />
+
+            <!-- TEXT VIEW -->
+
+            <KeyAttribute
+                android:translationY="-30dp"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-60dp"
+                motion:framePosition="20"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-90dp"
+                motion:framePosition="30"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-120dp"
+                motion:framePosition="40"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-150dp"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-180dp"
+                motion:framePosition="60"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-210dp"
+                motion:framePosition="70"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-240dp"
+                motion:framePosition="80"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-270dp"
+                motion:framePosition="90"
+                motion:motionTarget="@+id/materialTextView" />
+            <KeyAttribute
+                android:translationY="-300dp"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/materialTextView" />
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/splogo"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            motion:layout_constraintBottom_toTopOf="@+id/materialTextView"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/materialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/splogo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            motion:layout_constraintBottom_toTopOf="@+id/materialTextView"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/materialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+</MotionScene>
