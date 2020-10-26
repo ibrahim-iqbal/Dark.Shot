@@ -10,6 +10,6 @@
         <attr name="buttontextcolor" format="color" />
         <attr name="headingcolor" format="color" />
         <attr name="huecolor" format="color" />
-        <attr name="presscolor" format="color" />
+        <attr name="errorcolor" format="color" />
     </declare-styleable>
 </resources>
