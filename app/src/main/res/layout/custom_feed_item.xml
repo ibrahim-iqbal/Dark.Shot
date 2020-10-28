@@ -27,6 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
+				android:id="@+id/preview_img"
                 android:src="@drawable/bg" />
 
 		</com.google.android.material.card.MaterialCardView>
@@ -52,6 +53,7 @@
 					android:layout_height = "0dp"
 					android:ellipsize="end"
 					android:lines="1"
+					android:id="@+id/photographer"
 					style="@style/usernameText"
 					android:text="username@123"
 					android:layout_weight="0.5"/>

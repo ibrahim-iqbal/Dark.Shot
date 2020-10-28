@@ -2,13 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.darkshot.app">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DarkShot.Dark">
+        android:theme="@style/Theme.DarkShot.Dark"
+        android:usesCleartextTraffic="true">
         <activity android:name=".view.DashboardActivity" />
         <activity android:name=".view.Splash">
             <intent-filter>
