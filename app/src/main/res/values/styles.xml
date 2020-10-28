@@ -48,6 +48,7 @@
         <item name="boxCornerRadiusBottomEnd">26dp</item>
         <item name="boxCornerRadiusTopStart">26dp</item>
         <item name="hintEnabled">true</item>
+        <item name="paddingStart">0dp</item>
         <item name="hintTextAppearance">@style/hintText</item>
         <item name="boxStrokeErrorColor">?errorcolor</item>
         <item name="errorTextColor">?errorcolor</item>
@@ -58,7 +59,18 @@
         <item name="boxStrokeColor">?attr/hintcolor</item>
         <item name="startIconTint">?attr/hintcolor</item>
         <item name="hintTextColor">?attr/hintcolor</item>
-        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textColor">?attr/textcolor</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="inputText" parent="">
+        <item name="android:paddingTop">36dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">?attr/textcolor</item>
+        <item name="android:background">@drawable/card_view</item>
     </style>
 
     <style name="errorText" parent="TextAppearance.MaterialComponents.Overline">

@@ -11,10 +11,10 @@
     <color name="colorSecondaryDark">#1E1E1E</color>
     <color name="colorOnSecondary">#FFFFFF</color>
 
-    <color name="colorHintDark">#3F3F3F</color>
+    <color name="colorHintDark">#646464</color>
     <color name="colorErrorDark">#B30018</color>
 
-    <color name="colorHintLight">#AEAEAE</color>
+    <color name="colorHintLight">#929292</color>
     <color name="colorErrorLight">#FF1333</color>
 
 </resources>

@@ -37,12 +37,12 @@
                 motion:motionTarget="@+id/splogo" />
             <KeyAttribute
                 android:rotation="60"
-                android:translationY="-170dp"
+                android:translationY="-180dp"
                 motion:framePosition="60"
                 motion:motionTarget="@+id/splogo" />
             <KeyAttribute
                 android:rotation="70"
-                android:translationY="-200dp"
+                android:translationY="-210dp"
                 motion:framePosition="70"
                 motion:motionTarget="@+id/splogo" />
             <KeyAttribute
