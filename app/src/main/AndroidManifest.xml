@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.darkshot.app">
+<manifest xmlns:android = "http://schemas.android.com/apk/res/android"
+	package = "io.darkshot.app" >
 
-    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name = "android.permission.INTERNET" />
 
-    <application
-        android:name=".App"
-        android:allowBackup="true"
-        android:icon="@drawable/logo"
-        android:label="@string/app_name"
-        android:roundIcon="@drawable/logo"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.DarkShot.Dark"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".view.DashboardActivity" />
-        <activity android:name=".view.Splash">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+	<application
+		android:name = ".App"
+		android:allowBackup = "true"
+		android:icon = "@drawable/logo"
+		android:label = "@string/app_name"
+		android:roundIcon = "@drawable/logo"
+		android:supportsRtl = "true"
+		android:theme = "@style/Theme.DarkShot.Dark"
+		android:usesCleartextTraffic = "true" >
+		<activity android:name = ".view.ProfileActivity" ></activity >
+		<activity android:name = ".view.DashboardActivity" />
+		<activity android:name = ".view.Splash" >
+			<intent-filter >
+				<action android:name = "android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+				<category android:name = "android.intent.category.LAUNCHER" />
+			</intent-filter >
+		</activity >
+	</application >
 
-</manifest>
+</manifest >
